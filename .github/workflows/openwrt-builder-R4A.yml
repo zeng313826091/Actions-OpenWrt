@@ -15,12 +15,11 @@ name: OpenWrt Builder-XiaoMi-R4A-千兆版
 on:
   repository_dispatch:
   workflow_dispatch:
-inputs:
+    inputs:
       ssh:
         description: 'SSH 连接至 Actions'
         required: true
         default: 'true'
-
 
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
